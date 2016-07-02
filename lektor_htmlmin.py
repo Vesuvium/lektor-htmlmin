@@ -42,7 +42,7 @@ class HTMLMinPlugin(Plugin):
         """
         Minifies the target html file.
         """
-        enc = chardet.detect(open(target).read())['encoding']
+        enc = chardet.detect(open(target, 'rb').read())['encoding']
         f = codecs.open(target, 'r+', enc)
         result = htmlmin.minify(f.read(), **self.options)
         f.seek(0)
