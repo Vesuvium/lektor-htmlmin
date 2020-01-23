@@ -65,7 +65,7 @@ class HTMLMinPlugin(Plugin):
         if not is_enabled:
             return
 
-        reporter.report_generic('Starting HTML minification')
+        reporter.report_generic('HTML minification started')
         for htmlfile in self.find_html_files(builder.destination_path):
             self.minify_file(htmlfile)
         reporter.report_generic('HTML minification finished')

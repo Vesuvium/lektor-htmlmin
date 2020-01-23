@@ -9,7 +9,7 @@ setup(
     description='HTML minifier for Lektor. Based on htmlmin.',
     long_description=readme,
      url='https://github.com/vesuvium/lektor-htmlmin',
-    version='1.0.2',
+    version='1.0.3',
     author=u'Jacopo Cascioli',
     author_email='jacopocascioli@gmail.com',
     license='MIT',
